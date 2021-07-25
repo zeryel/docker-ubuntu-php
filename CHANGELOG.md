@@ -8,5 +8,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### 1.0.0
 - Added PHP 8.0.8
-- Added Composer 2.4.1
+- Added Composer 2.1.5
 

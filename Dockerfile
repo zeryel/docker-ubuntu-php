@@ -6,6 +6,6 @@ RUN apt-get install -y software-properties-common && add-apt-repository ppa:ondr
 RUN apt-get install -y curl git zip unzip php php-xml php-zip php-mbstring
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-	php composer-setup.php --install-dir=bin --filename=composer && \
+	php composer-setup.php --install-dir=bin --filename=composer --version=2.1.5 && \
     php -r "unlink('composer-setup.php');"
 
