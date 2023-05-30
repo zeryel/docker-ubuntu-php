@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:23.10
 MAINTAINER Aleksey Yanovskiy <yanov-sky@mail.ru>
 
 RUN apt-get update -y
@@ -6,6 +6,6 @@ RUN apt-get install -y software-properties-common && add-apt-repository ppa:ondr
 RUN apt-get install -y curl git zip unzip php php-xml php-zip php-mbstring
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-	php composer-setup.php --install-dir=bin --filename=composer --version=2.1.5 && \
+    php composer-setup.php --install-dir=bin --filename=composer --version=2.5.7 && \
     php -r "unlink('composer-setup.php');"
 
